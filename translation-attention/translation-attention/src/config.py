@@ -1,0 +1,17 @@
+from pathlib import Path
+
+ROOT_DIR = Path(__file__).parent.parent
+
+RAW_DATA_DIR = ROOT_DIR / 'data' / 'raw'
+PROCESSED_DIR = ROOT_DIR / 'data' / 'processed'
+LOGS_DIR = ROOT_DIR / 'logs'
+MODELS_DIR = ROOT_DIR / 'models'
+
+SEQ_LEN = 32
+BATCH_SIZE = 128
+EMBEDDING_DIM = 128
+ENCODER_HIDDEN_SIZE = 256
+DECODER_HIDDEN_SIZE = 2 * ENCODER_HIDDEN_SIZE
+ENCODER_LAYERS = 2
+LEARNING_RATE = 1e-3
+EPOCHS = 30
